@@ -1,0 +1,35 @@
+reasoner:
+  name: chatgpt
+  api_key: your_api_key
+  model_engine: gpt-3.5-turbo
+
+  turning_point_definition: |
+    [DEFINITION]
+    A turning point in a conversation is an identifiable event that leads to an unexpected and significant transformation in the subjective personal states (including decisions, perspectives, feelings, and behaviors) of the speakers during the given conversation. It should impact at least one person in the conversation.
+
+    Elaborating the important terms:
+    1. identifiable: This mean the event can be recognized based on clear evidence. 
+    2. unexpected: a surprise and going against the usual flow.
+    3. significant: 
+    3a. Considering the intensity: Influences not only one's state, but also others' states. Effects on personal states vary and should follow common sense.
+    3b. Considering the duration: Ongoing effects seen in this conversation.
+    4. subjective personal states: Including decisions, behaviors  (reflected by the actions), or feelings. Can be recognized by both verbal and non-verbal cues.
+    5. during: consider the evidence before and after that point in the current conversation only, not the potential consequences!
+    [/DEFINITION]
+
+  command: |
+    [COMMAND]
+    Identify the turning point in the conversation, provide a brief description of the utterance where it starts, and explain the significant and lasting changes in the speakers' subjective personal states as a result of that turning point. If there's insufficient evidence for such changes, return "none."
+    [/COMMAND]
+  
+  steps: |
+    Step 1: Digest the conversation to know what is hapenning (the speakers, topics, main events, etc. )
+    Step 2: Check each person independently for their change in decisions, perspectives, feelings, behaviours and use your commonsense to estimate its siginificance and unexpectedness.
+    Step 3: Looking at the evidence before and reactions after the point, find the turning point.
+    Step 4: Give clear explanation with evidence inside the conversation.
+  # important_notes: |
+  #   [IMPORTANT NOTES]
+  #   - Decisions, perspectives, opinions, or behavior changes are strong indicators of a turning point. Show the initial decisions, perspectives, opinions, or behaviors and those after the point.
+  #   - Feelings change frequently. So, we should take into account two criteria: intensity and duration. The intensity of the emotions can be deduced from facial expressions, or how that emotional change can lead to decisions, perspectives, opinions, behaviors. For the duration, comparing the number of scenes before and after that change is crucial in concluding a turning point.
+  #   - Please do not assume or focus on unreal potential changes. Focus on the evidence in the text you are given.
+  #   [/IMPORTANT NOTES]

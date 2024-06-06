@@ -1,0 +1,9 @@
+data:
+  name: video
+  dataset_name: CCTP
+  input_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/conversations
+  output_path: reasoning_results
+  output_video_description_path: video_descriptions
+  output_video_summary_path: video_summaries
+  utterance_video_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/utterances/videos
+  utterance_transcript_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/utterances/transcripts

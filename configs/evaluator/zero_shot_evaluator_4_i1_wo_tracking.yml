@@ -1,0 +1,12 @@
+evaluator:
+  name: zero-shot-gpt-4-i1-wo-tracking
+  api_key: your_api_key
+  model_engine: gpt-4-1106-preview
+  evaluated_conversations_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/multimodal_TPD/results/evaluate/Evaluator_zero-shot-gpt-4-i1-wo-tracking/conversations
+  prediction_conversations_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/multimodal_TPD/results/evaluate/Evaluator_zero-shot-gpt-4-i1-wo-tracking/predictions
+  test_data_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/annotations/test.jsonl
+  system_content: You are a trained chatbot that can find turning points in conversations. A turning point in a conversation is an identifiable event that leads to an unexpected and significant transformation in the subjective personal states (including decisions, behaviors, perspectives, and feelings) of at least one speaker during the given conversation.
+  instruction_1: Read this conversation. Each utterance includes the transcripts and visual descriptions.
+  instruction_3: Identify the turning point events.
+  
+  tracking: False

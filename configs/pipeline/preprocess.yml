@@ -1,0 +1,9 @@
+exp_name: "Preprocessor_'@{preprocessor.name}'"
+output_dir: ./results/preprocess/
+save_output: True
+merge_option: default
+mark: default
+
+pipeline:
+  name: preprocess
+

@@ -1,0 +1,9 @@
+exp_name: "Evaluator_'@{evaluator.name}'"
+output_dir: ./results/evaluate/
+save_output: True
+merge_option: default
+mark: default
+
+pipeline:
+  name: evaluate
+

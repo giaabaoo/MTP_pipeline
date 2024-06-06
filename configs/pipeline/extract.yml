@@ -1,0 +1,9 @@
+exp_name: "Segmentor_'@{segmentor.name}'-SceneDescriber_'@{scene_describer.name}'-Summarizer_'@{reasoner.name}'-Data_'@{data.dataset_name}'"
+output_dir: ./results/extract/
+save_output: True
+merge_option: default
+mark: default
+
+pipeline:
+  name: extract
+

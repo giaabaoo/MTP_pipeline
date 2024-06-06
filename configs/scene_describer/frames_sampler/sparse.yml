@@ -1,0 +1,3 @@
+frames_sampler:
+  name: sparse
+  num_frames: 5

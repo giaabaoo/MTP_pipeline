@@ -1,0 +1,9 @@
+exp_name: "Trainer_'@{trainer.name}'"
+output_dir: ./results/train/
+save_output: True
+merge_option: default
+mark: default
+
+pipeline:
+  name: train
+

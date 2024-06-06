@@ -1,0 +1,9 @@
+exp_name: "Reasoner_'@{reasoner.name}'-Data_'@{data.dataset_name}'"
+output_dir: ./results/transcript_only_inference/
+save_output: True
+merge_option: default
+mark: default
+
+pipeline:
+  name: transcript_only_inference
+

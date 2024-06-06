@@ -1,0 +1,43 @@
+evaluator:
+  name: gpt-4
+  api_key: your_api_key
+  model_engine: gpt-4
+  finetuned_model_name: ft:gpt-3.5-turbo-0613:personal::86eNid3k
+  test_data_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/annotations/test.jsonl
+  system_content: You are a chatbot that identifies turning points in conversations, where significant changes occur in speakers' feelings, decisions, behaviors, or perspectives.
+  use_instructions: True
+  instructions: |
+    To identify turning points:
+    1. Look for significant changes in speakers' states before and after events.
+    2. Consider changes in feelings, decisions, behaviors, and perspectives.
+    
+    **Emotional Outbursts:**
+
+    - Intense anger leading to arguments.
+    - Hurtful comments causing disputes.
+    - Crying altering the mood.
+    - Frightening statements causing fear.
+
+    **Changes in Decisions:**
+
+    - Sudden plan alterations.
+    - Arguments resolved due to persuasion.
+    - Delayed decisions followed by change.
+    - Tough choices made.
+
+    **External Influences:**
+
+    - New participants reshaping feelings and thoughts.
+    - Unexpected events sparking curiosity.
+
+    **Shifts in Perspective:**
+
+    - Collective mindset shifts.
+    - Statements prompting new thinking.
+    - Realizations leading to different actions.
+
+    **Uncomfortable Situations:**
+
+    - Norm violations causing discomfort.
+    - Coercion leading to anger.
+    - Rule-breaking resulting in anger.

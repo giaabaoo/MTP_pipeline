@@ -1,0 +1,15 @@
+scene_describer:
+  name: LLAVA
+  prompt: Give me the short descriptions of the actions, facial expressions, postures, gestures, potential emotions (with valence and arousal).
+
+  model_path: liuhaotian/LLaVA-Lightning-MPT-7B-preview
+  model_base: null
+  image_file: ./tmp/tmp.jpg
+  num_gpus: 1
+  conv_mode: null
+  temperature: 0.2
+  max_new_tokens: 512
+  load_8bit: False
+  load_4bit: True
+  debug: False
+  results_path: video_descriptions

@@ -1,0 +1,11 @@
+scene_describer:
+  name: GPT4V
+  api_key: your_api_key
+  prompt: |
+    Give a short and concise description of the scene. Infer all possible emotions (provide evidence of facial expressions) and actions of each person in the scene. Max 10 words. Your answer should be like this example:
+      - Scene: A garden with green grass, carrots, and some big trees.
+      - Emotions: surprise (open mouth and rolling eyes), amusement (smiling)
+      - Actions: playing with a dog      
+
+  results_path: video_descriptions
+  

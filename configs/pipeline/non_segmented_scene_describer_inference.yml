@@ -1,0 +1,9 @@
+exp_name: "SceneDescriber_'@{scene_describer.name}'-FramesSampler_'@{frames_sampler.name}'-Data_'@{data.dataset_name}'"
+output_dir: ./results/non_segmented_scene_describer_inference/
+save_output: True
+merge_option: default
+mark: default
+
+pipeline:
+  name: non_segmented_scene_describer_inference
+

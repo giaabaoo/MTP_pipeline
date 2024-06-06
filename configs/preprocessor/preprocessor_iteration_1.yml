@@ -1,0 +1,12 @@
+preprocessor:
+  name: base
+  transcripts_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/utterances/transcripts
+  
+  raw_annotations_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/annotations/raw_annotations.xlsx
+  annotations_path: "/home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/annotations/annotations.xlsx"
+
+  train_data_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/annotations/train.jsonl
+  test_data_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/annotations/test.jsonl
+  summaries_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/multimodal_TPD/results/extract/Segmentor_whisperx-SceneDescriber_LLAVA-Reasoner_chatgpt-Data_CCTP/video_summaries_with_speaker_id  
+  train_positive_samples_only: False
+  no_training_set: True

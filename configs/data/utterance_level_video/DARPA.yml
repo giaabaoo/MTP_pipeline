@@ -1,0 +1,8 @@
+data:
+  name: utterance_level_video
+  dataset_name: DARPA
+  input_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/DARPA/videos
+  output_path: reasoning_results
+  output_video_description_path: video_descriptions
+  output_video_summary_path: video_summaries
+  transcript_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/DARPA/transcripts/data.json

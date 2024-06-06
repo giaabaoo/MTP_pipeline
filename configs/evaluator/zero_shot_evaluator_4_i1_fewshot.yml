@@ -1,0 +1,47 @@
+evaluator:
+  name: zero-shot-gpt-4-i1-fewshot
+  api_key: your_api_key
+  model_engine: gpt-4-1106-preview
+  evaluated_conversations_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/multimodal_TPD/results/evaluate/Evaluator_zero-shot-gpt-4-i1-fewshot/conversations
+  prediction_conversations_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/multimodal_TPD/results/evaluate/Evaluator_zero-shot-gpt-4-i1-fewshot/predictions
+  test_data_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/CCTP/iteration_1/annotations/test.jsonl
+  system_content: You are a trained chatbot that can find turning points in conversations. A turning point in a conversation is an identifiable event that leads to an unexpected and significant transformation in the subjective personal states (including decisions, behaviors, perspectives, and feelings) of at least one speaker during the given conversation.
+  instruction_1: Read this conversation. Each utterance includes the transcripts and visual descriptions.
+  instruction_2: Utilize a tracker for each person in the conversation. For each speaker, provide a concise list of their feelings, behaviors (based on the context and actions), decisions, and any perspective changes (include those with clear evidence from the conversation). Limit the list to a maximum of 256 words.  
+  instruction_3: Identify the turning point events based on the initial conversation and tracking results if there is any. Begin by finding the turning point for each person.
+  fewshot: True
+  tracking: True
+  fewshot_examples: |
+    These are some examples: 
+    1. Turning Points in Conversations:
+
+      Emotional Outbursts:
+      - Sometimes, when someone gets really, really mad and can't control it, it can lead to a big, angry fight.
+      - If someone says something really mean, it can make people argue and get into a big fight.
+      - Every once in a while, someone might start crying during a conversation, and that can change the mood.
+      - When someone says something really scary or worrisome, it can make everyone feel afraid or worried.
+
+      Changes in Decisions:
+      - Sometimes, the group has a plan, but suddenly they decide to do something different.
+      - People might start arguing, but then they all agree because something changes their minds.
+      - Occasionally, someone takes a while to make up their mind, but eventually, they decide to change it.
+      - Once in a while, someone has to make a tough choice during the conversation.
+
+      External Influences:
+      - Imagine someone new joins the conversation, and it completely changes how everyone feels or what they think.
+      - Something unexpected happens, and it makes the speakers feel very surprised and keep being curious about what's going on.
+
+      Shifts in Perspective:
+      - Sometimes, everyone starts thinking one way, but later on, they change their minds and think differently.
+      - While someone is talking, someone else might say something that makes the first person think in a new way.
+      - Every so often, someone realizes or says something that makes them act very differently.
+
+      Uncomfortable Situations:
+      - Imagine someone violating social norms, and it makes everyone feel uncomfortable or upset.
+      - If someone makes another person do something they don't like, it can make that person mad.
+      - Every once in a while, somebody breaks the rules, and everyone gets mad at them.
+
+    2. No Turning Points in Conversations:
+      - Even when someone says something mean, everyone reacts like they normally would, without any big changes.
+      - Sometimes, during the conversation, nobody's subjective personal states change much; things stay pretty much the same.
+

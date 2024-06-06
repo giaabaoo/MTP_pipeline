@@ -1,0 +1,6 @@
+data:
+  name: utterance_level_transcript
+  dataset_name: TBBT_full
+  input_path: /home/dhgbao/Research_Monash/code/others/my_code/methods_experiments/multimodal/conversational_turning_point_detection/data/TBBT_full_transcripts_only
+  output_path: reasoning_results
+  number_of_conversations: 30
